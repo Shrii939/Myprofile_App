@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signIn">
+
+    <TextView
+        android:id="@+id/weltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:text="Welcome to MyProfile"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:autofillHints="name"
+        android:background="@drawable/shape"
+        android:hint="username"
+        android:textColorHint="@color/grey"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/psswd"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:hint="password"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:textColorHint="@color/grey"
+        android:paddingBottom="3dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:text="sign In"
+        android:onClick="signIn"/>
+
+</LinearLayout>
